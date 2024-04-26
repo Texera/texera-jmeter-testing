@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Blazemeter test plan">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.${project.version}. Please contact support@blazemeter.com for further support.</stringProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+        <collectionProp name="HeaderManager.headers"/>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
+        <collectionProp name="Arguments.arguments"/>
+      </Arguments>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="false">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <collectionProp name="DNSCacheManager.hosts"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="false">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
+        <collectionProp name="CookieManager.cookies">
+          <elementProp name="LSOLH" elementType="Cookie" testname="LSOLH">
+            <stringProp name="Cookie.value">_SVI_EL_z6IOlyoIDGAYiP01BRURIZl9xY01nUlNxZk1OTHNsT2MzZ1JWa0tOWTRBSC11WXBCLUN2ZE11T0hoWkRiZVRSNEtxbjJaLWhKcw_:28336656:6c26</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Host-3PLSID" elementType="Cookie" testname="__Host-3PLSID">
+            <stringProp name="Cookie.value">o.calendar.google.com|o.chat.google.com|o.chromewebstore.google.com|o.drive.fife.usercontent.google.com|o.drive.google.com|o.fi.google.com|o.gds.google.com|o.groups.google.com|o.mail.google.com|o.meet.google.com|o.messages.google.com|o.myaccount.google.com|o.myactivity.google.com|o.passwords.google.com|o.photos.fife.usercontent.google.com|o.photos.google.com|o.play.google.com|o.store.google.com|o.takeout.google.com|s.IN|s.youtube:g.a000hwhZ2QvMep49099HYnISNW-vmSMYqAp7ndFsb6qXBJG_wFoRjaFiOOx47j8lDNfWbOJZhwACgYKARgSAQASFQHGX2MiKxbQa02yPTFiirIJ1kCaeRoVAUF8yKp-UtntHjwLegrNKL_I1KU70076</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Secure-OSID" elementType="Cookie" testname="__Secure-OSID">
+            <stringProp name="Cookie.value">g.a000hwhZ2eUnnpa-nZwIHrGzySsyB0nh28O-25ozbYe0dgCVw6GGKfzuFR_DuqSue_lYBXt9FQACgYKAR8SAQASFQHGX2Mi64QAc9TIQT9hh2MtgDjGbBoVAUF8yKpl4qBhex_hHtzLKV9wn1Xs0076</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Secure-3PSID" elementType="Cookie" testname="__Secure-3PSID">
+            <stringProp name="Cookie.value">g.a000hwhZ2W4LJ-Z2mqw8j66EV7L6wNV__iTSB2acldbNIFl6Ig1MJw5vvbgqk7ja7Pc2i4z57QACgYKATsSAQASFQHGX2Mij9evjjy7IgvRDwlXdvBObRoVAUF8yKpDadDCZE_SrA1yii426V6k0076</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Secure-3PAPISID" elementType="Cookie" testname="__Secure-3PAPISID">
+            <stringProp name="Cookie.value">9IkkPkVlqXkv7R3v/A82mJi1EGVDrjSD-D</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Secure-3PSIDTS" elementType="Cookie" testname="__Secure-3PSIDTS">
+            <stringProp name="Cookie.value">sidts-CjIB7F1E_CvGT-cCg2ppoY3M5Id0DjmscQWXn8XyMW8PGT5XynbtJlLQ1L3F7LEVjMVkChAA</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="1P_JAR" elementType="Cookie" testname="1P_JAR">
+            <stringProp name="Cookie.value">2024-03-25-06</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="NID" elementType="Cookie" testname="NID">
+            <stringProp name="Cookie.value">512=KKevslp1fuSNc6Kbkzf8WwuK0IbKN9wbB0DgKpxmwLRZNn7kWJJJdR_lpEcDJKmgoQMqtxL1rYQX78CYNqvWYKTsDT5JkS10fpoDmAs-ebM0Dewda_aULIHktA1J-MxjompLuD2T0qC4MBaQjfkzFLzliEQDUz4VfFeShFiQOaBaU8PrxGZH4V8p27wFxUO2tKPGiF4Xy70Pgi1d45tfA4Afwvd959A_HDvg7sPxh0ZaB-mUW3KGFvxTG16HzUevWBTMt9PaUzXPeveTEtL692U_b-T6iE4MYdB7-Ei4fFpuj2NFMXm_BY6p0uJ307Mu1uzXC8yQwJCVrbzLGYWM_6hiDqSKq8THiD4uxwGNhdaGNk2q1acsq77gciUf4HxoHakThxUweOb5JRe3Vk2dtdtMWkHUjLom4x9mfx88t6F7N3fev1bD7jxUWeJ3goe_zb7_qVCyCqNFz-StsiYyn2l7m11ow3Ad7yAlYfjuIcbQJPpHP9ZrwlqR9j3bGajko65aZYTnKV8hswshwMj7krvzAM97u_NA9VSGUslpOuyXgfnF3y-m9cfzSNGPzNZiNd3kww9Ta3Bqv3swUcm5HC17c9blG6EBEURk439kLWlABFzYomc3GVzMy2_lMX-QPxNW95pEENx9WSf0lhuzFHh8KDcubKdABDrNZRkQdI86lV7b_AYLd3__ZClTMykKpdlRDBPHomrHXVchgRcgpZUW7jNw0URH-TD5JCEkHULjPJfGTSJ9xepV1yziXsL8U5N8bZjVVFKChVsUHQvGB6-_L3XINt17BcoP_YuG1DrwtRTdbxvepid4UnwUqif2di4j3Xb8BpLPU31oNDA4b0YkSU_GvicnD7l5elARngrYtWtDGn93ghTznlJjRaxp</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="__Secure-3PSIDCC" elementType="Cookie" testname="__Secure-3PSIDCC">
+            <stringProp name="Cookie.value">AKEyXzUTlZ3WD0UaP-Kx2EYQJnjEerTDnfRuEToXwEZP_B6hDKR2jgYgM3cYgJdHrJgkgQIFsWQ</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">true</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="next-auth.csrf-token" elementType="Cookie" testname="next-auth.csrf-token">
+            <stringProp name="Cookie.value">29517ae83585380e9fcf144bfa29205d8a793e6c0679d2d97ab7bb15b36fd353|ca5572f3dcb40f842ac94af1d31f5be6a1318ef3b7599ccc74700476abc69b9f</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="next-auth.callback-url" elementType="Cookie" testname="next-auth.callback-url">
+            <stringProp name="Cookie.value">http://localhost:3000/seller/ayush123</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+        </collectionProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="false">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <intProp name="ThreadGroup.num_threads">10</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">0</longProp>
+        <longProp name="ThreadGroup.delay">0</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">random_pairs.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">user,password</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/auth/register">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/auth/register</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;username&quot;:&quot;${user}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/auth/login " enabled="true">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/auth/login</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;username&quot;:&quot;${user}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/auth/refresh " enabled="true">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/auth/refresh</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;accessToken&quot;:&quot;${accessToken}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/dataset/create">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/dataset/create</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+            <collectionProp name="HTTPFileArgs.files">
+              <elementProp name="Assignment 5.csv" elementType="HTTPFileArg">
+                <stringProp name="File.mimetype">text/csv</stringProp>
+                <stringProp name="File.path">Assignment 5.csv</stringProp>
+                <stringProp name="File.paramname">file:upload:Assignment 5.csv</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="datasetName" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">Test Dataset</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">datasetName</stringProp>
+              </elementProp>
+              <elementProp name="datasetDescription" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">Test</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">datasetDescription</stringProp>
+              </elementProp>
+              <elementProp name="isDatasetPublic" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">isDatasetPublic</stringProp>
+              </elementProp>
+              <elementProp name="initialVersionName" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">v1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">initialVersionName</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">multipart/form-data; boundary=----WebKitFormBoundaryXt6FMkdDQ1gBwd01</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
+            <stringProp name="JSONPostProcessor.referenceNames">did</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.dataset.did</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/dataset/${did}">
+          <stringProp name="TestPlan.comments">gets called when we update the workflow or save it</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/dataset/${did}</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/dataset/${did}/version/list">
+          <stringProp name="TestPlan.comments">gets called when we update the workflow or save it</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/dataset/${did}/version/list</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/workflow/create " enabled="true">
+          <stringProp name="TestPlan.comments">gets called when we update the workflow or save it</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/workflow/create</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;name&quot;: &quot;Workflow12&quot;,&#xd;
+    &quot;content&quot;: &quot;{\&quot;operators\&quot;:[{\&quot;operatorID\&quot;:\&quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17\&quot;,\&quot;operatorType\&quot;:\&quot;CSVFileScan\&quot;,\&quot;operatorVersion\&quot;:\&quot;57684f91ac64bd2a41b9f37789da1350cca78cc1\&quot;,\&quot;operatorProperties\&quot;:{\&quot;fileEncoding\&quot;:\&quot;US_ASCII\&quot;,\&quot;customDelimiter\&quot;:\&quot;,\&quot;,\&quot;hasHeader\&quot;:true,\&quot;fileName\&quot;:\&quot;/Test Dataset/Assignment 5.csv\&quot;},\&quot;inputPorts\&quot;:[],\&quot;outputPorts\&quot;:[{\&quot;portID\&quot;:\&quot;output-0\&quot;,\&quot;displayName\&quot;:\&quot;\&quot;,\&quot;allowMultiInputs\&quot;:false,\&quot;isDynamicPort\&quot;:false}],\&quot;showAdvanced\&quot;:false,\&quot;isDisabled\&quot;:false,\&quot;customDisplayName\&quot;:\&quot;CSV File Scan\&quot;,\&quot;dynamicInputPorts\&quot;:false,\&quot;dynamicOutputPorts\&quot;:false},{\&quot;operatorID\&quot;:\&quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2\&quot;,\&quot;operatorType\&quot;:\&quot;SimpleSink\&quot;,\&quot;operatorVersion\&quot;:\&quot;57684f91ac64bd2a41b9f37789da1350cca78cc1\&quot;,\&quot;operatorProperties\&quot;:{},\&quot;inputPorts\&quot;:[{\&quot;portID\&quot;:\&quot;input-0\&quot;,\&quot;displayName\&quot;:\&quot;\&quot;,\&quot;allowMultiInputs\&quot;:false,\&quot;isDynamicPort\&quot;:false,\&quot;dependencies\&quot;:[]}],\&quot;outputPorts\&quot;:[{\&quot;portID\&quot;:\&quot;output-0\&quot;,\&quot;displayName\&quot;:\&quot;\&quot;,\&quot;allowMultiInputs\&quot;:false,\&quot;isDynamicPort\&quot;:false}],\&quot;showAdvanced\&quot;:false,\&quot;isDisabled\&quot;:false,\&quot;customDisplayName\&quot;:\&quot;View Results\&quot;,\&quot;dynamicInputPorts\&quot;:false,\&quot;dynamicOutputPorts\&quot;:false}],\&quot;operatorPositions\&quot;:{\&quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17\&quot;:{\&quot;x\&quot;:424,\&quot;y\&quot;:168},\&quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2\&quot;:{\&quot;x\&quot;:645,\&quot;y\&quot;:155}},\&quot;links\&quot;:[{\&quot;linkID\&quot;:\&quot;link-5e5b8aea-32aa-4173-96f8-7660c664cb2e\&quot;,\&quot;source\&quot;:{\&quot;operatorID\&quot;:\&quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17\&quot;,\&quot;portID\&quot;:\&quot;output-0\&quot;},\&quot;target\&quot;:{\&quot;operatorID\&quot;:\&quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2\&quot;,\&quot;portID\&quot;:\&quot;input-0\&quot;}}],\&quot;groups\&quot;:[],\&quot;commentBoxes\&quot;:[]}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">wid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.workflow.wid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/workflow/${wid}/environment" enabled="true">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api//workflow/${wid}/environment</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">eid</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.eid</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://localhost:8080/api/environment/${eid}/dataset/add" enabled="true">
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">api/environment/${eid}/dataset/add</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;did&quot;:${did}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-987057194">^{&quot;accessToken&quot;:&quot;[^&quot;]+&quot;}$</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler" testname="WebSocket request-response Sampler 1" enabled="true">
+          <boolProp name="createNewConnection">true</boolProp>
+          <boolProp name="TLS">false</boolProp>
+          <stringProp name="server">localhost</stringProp>
+          <stringProp name="port">8080</stringProp>
+          <stringProp name="path">wsapi/workflow-websocket?access-token=${accessToken}</stringProp>
+          <stringProp name="connectTimeout">20000</stringProp>
+          <stringProp name="payloadType">Text</stringProp>
+          <stringProp name="requestData">{
+    &quot;type&quot;: &quot;RegisterWorkflowIdRequest&quot;,
+    &quot;workflowId&quot;: &quot;${wid}&quot;
+}</stringProp>
+          <stringProp name="readTimeout">6000</stringProp>
+          <boolProp name="loadDataFromFile">false</boolProp>
+          <stringProp name="dataFile"></stringProp>
+        </eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Upgrade</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
+            <collectionProp name="CookieManager.cookies">
+              <elementProp name="next-auth.csrf-token" elementType="Cookie" testname="next-auth.csrf-token">
+                <stringProp name="Cookie.value">29517ae83585380e9fcf144bfa29205d8a793e6c0679d2d97ab7bb15b36fd353%7Cca5572f3dcb40f842ac94af1d31f5be6a1318ef3b7599ccc74700476abc69b9f</stringProp>
+                <stringProp name="Cookie.domain">localhost:4200</stringProp>
+                <stringProp name="Cookie.path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjE5NDAwfQ.ChvsILiyjPOKGKpo1toRji2FlwhiQXR6-x1jotnU778</stringProp>
+                <boolProp name="Cookie.secure">false</boolProp>
+                <longProp name="Cookie.expires">0</longProp>
+                <boolProp name="Cookie.path_specified">true</boolProp>
+                <boolProp name="Cookie.domain_specified">true</boolProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <stringProp name="LoopController.loops">2</stringProp>
+        </LoopController>
+        <hashTree>
+          <eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler" testname="WebSocket Single Read Sampler" enabled="true">
+            <boolProp name="TLS">false</boolProp>
+            <stringProp name="server"></stringProp>
+            <stringProp name="port">80</stringProp>
+            <stringProp name="path"></stringProp>
+            <stringProp name="connectTimeout">20000</stringProp>
+            <stringProp name="dataType">Text</stringProp>
+            <boolProp name="createNewConnection">false</boolProp>
+            <stringProp name="readTimeout">6000</stringProp>
+            <boolProp name="optional">false</boolProp>
+          </eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler>
+          <hashTree/>
+        </hashTree>
+        <eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler" testname="WebSocket request-response Sampler 2" enabled="true">
+          <boolProp name="createNewConnection">false</boolProp>
+          <boolProp name="TLS">false</boolProp>
+          <stringProp name="server">localhost</stringProp>
+          <stringProp name="port">8080</stringProp>
+          <stringProp name="path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjI3NDA2fQ.uDNnU8hsjDGWQ8EcNmIeT5giIKjyZalRIBY70giJk-o</stringProp>
+          <stringProp name="connectTimeout">20000</stringProp>
+          <stringProp name="payloadType">Text</stringProp>
+          <stringProp name="requestData">{
+    &quot;type&quot;: &quot;EditingTimeCompilationRequest&quot;,
+    &quot;operators&quot;: [
+        {
+            &quot;fileEncoding&quot;: &quot;US_ASCII&quot;,
+            &quot;customDelimiter&quot;: &quot;,&quot;,
+            &quot;hasHeader&quot;: true,
+            &quot;fileName&quot;: &quot;/Test Dataset/Assignment 5.csv&quot;,
+            &quot;operatorID&quot;: &quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17&quot;,
+            &quot;operatorType&quot;: &quot;CSVFileScan&quot;,
+            &quot;inputPorts&quot;: [],
+            &quot;outputPorts&quot;: [
+                {
+                    &quot;portID&quot;: &quot;output-0&quot;,
+                    &quot;displayName&quot;: &quot;&quot;,
+                    &quot;allowMultiInputs&quot;: false,
+                    &quot;isDynamicPort&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;operatorID&quot;: &quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2&quot;,
+            &quot;operatorType&quot;: &quot;SimpleSink&quot;,
+            &quot;inputPorts&quot;: [
+                {
+                    &quot;portID&quot;: &quot;input-0&quot;,
+                    &quot;displayName&quot;: &quot;&quot;,
+                    &quot;allowMultiInputs&quot;: false,
+                    &quot;isDynamicPort&quot;: false,
+                    &quot;dependencies&quot;: []
+                }
+            ],
+            &quot;outputPorts&quot;: [
+                {
+                    &quot;portID&quot;: &quot;output-0&quot;,
+                    &quot;displayName&quot;: &quot;&quot;,
+                    &quot;allowMultiInputs&quot;: false,
+                    &quot;isDynamicPort&quot;: false
+                }
+            ]
+        }
+    ],
+    &quot;links&quot;: [
+        {
+            &quot;fromOpId&quot;: &quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17&quot;,
+            &quot;fromPortId&quot;: {
+                &quot;id&quot;: 0,
+                &quot;internal&quot;: false
+            },
+            &quot;toOpId&quot;: &quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2&quot;,
+            &quot;toPortId&quot;: {
+                &quot;id&quot;: 0,
+                &quot;internal&quot;: false
+            }
+        }
+    ],
+    &quot;opsToViewResult&quot;: [],
+    &quot;opsToReuseResult&quot;: []
+}</stringProp>
+          <stringProp name="readTimeout">6000</stringProp>
+          <boolProp name="loadDataFromFile">false</boolProp>
+          <stringProp name="dataFile"></stringProp>
+        </eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Upgrade</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
+            <collectionProp name="CookieManager.cookies">
+              <elementProp name="next-auth.csrf-token" elementType="Cookie" testname="next-auth.csrf-token">
+                <stringProp name="Cookie.value">29517ae83585380e9fcf144bfa29205d8a793e6c0679d2d97ab7bb15b36fd353%7Cca5572f3dcb40f842ac94af1d31f5be6a1318ef3b7599ccc74700476abc69b9f</stringProp>
+                <stringProp name="Cookie.domain">localhost:4200</stringProp>
+                <stringProp name="Cookie.path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjE5NDAwfQ.ChvsILiyjPOKGKpo1toRji2FlwhiQXR6-x1jotnU778</stringProp>
+                <boolProp name="Cookie.secure">false</boolProp>
+                <longProp name="Cookie.expires">0</longProp>
+                <boolProp name="Cookie.path_specified">true</boolProp>
+                <boolProp name="Cookie.domain_specified">true</boolProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler" testname="WebSocket Single Read Sampler" enabled="true">
+            <boolProp name="TLS">false</boolProp>
+            <stringProp name="server"></stringProp>
+            <stringProp name="port">80</stringProp>
+            <stringProp name="path"></stringProp>
+            <stringProp name="connectTimeout">20000</stringProp>
+            <stringProp name="dataType">Text</stringProp>
+            <boolProp name="createNewConnection">false</boolProp>
+            <stringProp name="readTimeout">6000</stringProp>
+            <boolProp name="optional">true</boolProp>
+          </eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler>
+          <hashTree/>
+        </hashTree>
+        <eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler" testname="WebSocket request-response Sampler 3" enabled="true">
+          <boolProp name="createNewConnection">false</boolProp>
+          <boolProp name="TLS">false</boolProp>
+          <stringProp name="server">localhost</stringProp>
+          <stringProp name="port">8080</stringProp>
+          <stringProp name="path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjI3NDA2fQ.uDNnU8hsjDGWQ8EcNmIeT5giIKjyZalRIBY70giJk-o</stringProp>
+          <stringProp name="connectTimeout">20000</stringProp>
+          <stringProp name="payloadType">Text</stringProp>
+          <stringProp name="requestData">{
+    &quot;type&quot;: &quot;WorkflowExecuteRequest&quot;,
+    &quot;executionName&quot;: &quot;&quot;,
+    &quot;engineVersion&quot;: &quot;8b84d50c2&quot;,
+    &quot;logicalPlan&quot;: {
+        &quot;operators&quot;: [
+            {
+                &quot;fileEncoding&quot;: &quot;US_ASCII&quot;,
+                &quot;customDelimiter&quot;: &quot;,&quot;,
+                &quot;hasHeader&quot;: true,
+                &quot;fileName&quot;: &quot;/Test Dataset/Assignment 5.csv&quot;,
+                &quot;operatorID&quot;: &quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17&quot;,
+                &quot;operatorType&quot;: &quot;CSVFileScan&quot;,
+                &quot;inputPorts&quot;: [],
+                &quot;outputPorts&quot;: [
+                    {
+                        &quot;portID&quot;: &quot;output-0&quot;,
+                        &quot;displayName&quot;: &quot;&quot;,
+                        &quot;allowMultiInputs&quot;: false,
+                        &quot;isDynamicPort&quot;: false
+                    }
+                ]
+            },
+            {
+                &quot;operatorID&quot;: &quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2&quot;,
+                &quot;operatorType&quot;: &quot;SimpleSink&quot;,
+                &quot;inputPorts&quot;: [
+                    {
+                        &quot;portID&quot;: &quot;input-0&quot;,
+                        &quot;displayName&quot;: &quot;&quot;,
+                        &quot;allowMultiInputs&quot;: false,
+                        &quot;isDynamicPort&quot;: false,
+                        &quot;dependencies&quot;: []
+                    }
+                ],
+                &quot;outputPorts&quot;: [
+                    {
+                        &quot;portID&quot;: &quot;output-0&quot;,
+                        &quot;displayName&quot;: &quot;&quot;,
+                        &quot;allowMultiInputs&quot;: false,
+                        &quot;isDynamicPort&quot;: false
+                    }
+                ]
+            }
+        ],
+        &quot;links&quot;: [
+            {
+                &quot;fromOpId&quot;: &quot;CSVFileScan-operator-68c5b948-6246-47a4-9d70-618d346b8c17&quot;,
+                &quot;fromPortId&quot;: {
+                    &quot;id&quot;: 0,
+                    &quot;internal&quot;: false
+                },
+                &quot;toOpId&quot;: &quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2&quot;,
+                &quot;toPortId&quot;: {
+                    &quot;id&quot;: 0,
+                    &quot;internal&quot;: false
+                }
+            }
+        ],
+        &quot;opsToViewResult&quot;: [],
+        &quot;opsToReuseResult&quot;: []
+    }
+}</stringProp>
+          <stringProp name="readTimeout">6000</stringProp>
+          <boolProp name="loadDataFromFile">false</boolProp>
+          <stringProp name="dataFile"></stringProp>
+        </eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Upgrade</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
+            <collectionProp name="CookieManager.cookies">
+              <elementProp name="next-auth.csrf-token" elementType="Cookie" testname="next-auth.csrf-token">
+                <stringProp name="Cookie.value">29517ae83585380e9fcf144bfa29205d8a793e6c0679d2d97ab7bb15b36fd353%7Cca5572f3dcb40f842ac94af1d31f5be6a1318ef3b7599ccc74700476abc69b9f</stringProp>
+                <stringProp name="Cookie.domain">localhost:4200</stringProp>
+                <stringProp name="Cookie.path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjE5NDAwfQ.ChvsILiyjPOKGKpo1toRji2FlwhiQXR6-x1jotnU778</stringProp>
+                <boolProp name="Cookie.secure">false</boolProp>
+                <longProp name="Cookie.expires">0</longProp>
+                <boolProp name="Cookie.path_specified">true</boolProp>
+                <boolProp name="Cookie.domain_specified">true</boolProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <stringProp name="LoopController.loops">15</stringProp>
+        </LoopController>
+        <hashTree>
+          <eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler" testname="WebSocket Single Read Sampler" enabled="true">
+            <boolProp name="TLS">false</boolProp>
+            <stringProp name="server"></stringProp>
+            <stringProp name="port">80</stringProp>
+            <stringProp name="path"></stringProp>
+            <stringProp name="connectTimeout">20000</stringProp>
+            <stringProp name="dataType">Text</stringProp>
+            <boolProp name="createNewConnection">false</boolProp>
+            <stringProp name="readTimeout">6000</stringProp>
+            <boolProp name="optional">false</boolProp>
+          </eu.luminis.jmeter.wssampler.SingleReadWebSocketSampler>
+          <hashTree/>
+        </hashTree>
+        <eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler" testname="WebSocket request-response Sampler 4" enabled="true">
+          <boolProp name="createNewConnection">false</boolProp>
+          <boolProp name="TLS">false</boolProp>
+          <stringProp name="server">localhost</stringProp>
+          <stringProp name="port">8080</stringProp>
+          <stringProp name="path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjI3NDA2fQ.uDNnU8hsjDGWQ8EcNmIeT5giIKjyZalRIBY70giJk-o</stringProp>
+          <stringProp name="connectTimeout">20000</stringProp>
+          <stringProp name="payloadType">Text</stringProp>
+          <stringProp name="requestData">{
+    &quot;type&quot;: &quot;ResultPaginationRequest&quot;,
+    &quot;operatorID&quot;: &quot;SimpleSink-operator-838553b8-5873-4d13-a589-9c969479d7c2&quot;,
+    &quot;pageIndex&quot;: 1,
+    &quot;pageSize&quot;: 5
+}</stringProp>
+          <stringProp name="readTimeout">6000</stringProp>
+          <boolProp name="loadDataFromFile">false</boolProp>
+          <stringProp name="dataFile"></stringProp>
+        </eu.luminis.jmeter.wssampler.RequestResponseWebSocketSampler>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Cache-Control</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Upgrade</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="false">
+            <collectionProp name="CookieManager.cookies">
+              <elementProp name="next-auth.csrf-token" elementType="Cookie" testname="next-auth.csrf-token">
+                <stringProp name="Cookie.value">29517ae83585380e9fcf144bfa29205d8a793e6c0679d2d97ab7bb15b36fd353%7Cca5572f3dcb40f842ac94af1d31f5be6a1318ef3b7599ccc74700476abc69b9f</stringProp>
+                <stringProp name="Cookie.domain">localhost:4200</stringProp>
+                <stringProp name="Cookie.path">wsapi/workflow-websocket?access-token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJheXVzaCIsInVzZXJJZCI6MzcsImdvb2dsZUlkIjpudWxsLCJlbWFpbCI6ImF5dXNoIiwicm9sZSI6IkFETUlOIiwiZXhwIjoxNzE0NjE5NDAwfQ.ChvsILiyjPOKGKpo1toRji2FlwhiQXR6-x1jotnU778</stringProp>
+                <boolProp name="Cookie.secure">false</boolProp>
+                <longProp name="Cookie.expires">0</longProp>
+                <boolProp name="Cookie.path_specified">true</boolProp>
+                <boolProp name="Cookie.domain_specified">true</boolProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+            <stringProp name="JSON_PATH">$.table</stringProp>
+            <stringProp name="EXPECTED_VALUE">[{&quot;id&quot;:100,&quot;name&quot;:&quot;John Smith&quot;,&quot;city&quot;:&quot;Austin&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zipcode&quot;:78727},{&quot;id&quot;:200,&quot;name&quot;:&quot;Joe Johnson&quot;,&quot;city&quot;:&quot;Dallas&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zipcode&quot;:75201},{&quot;id&quot;:300,&quot;name&quot;:&quot;Bob Jones&quot;,&quot;city&quot;:&quot;Houston&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zipcode&quot;:77028},{&quot;id&quot;:400,&quot;name&quot;:&quot;Andy Davis&quot;,&quot;city&quot;:&quot;San Antonio&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zipcode&quot;:78227},{&quot;id&quot;:500,&quot;name&quot;:&quot;James Williams&quot;,&quot;city&quot;:&quot;Austin&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zipcode&quot;:78727}]</stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <eu.luminis.jmeter.wssampler.CloseWebSocketSampler guiclass="eu.luminis.jmeter.wssampler.CloseWebSocketSamplerGui" testclass="eu.luminis.jmeter.wssampler.CloseWebSocketSampler" testname="WebSocket Close" enabled="true">
+          <stringProp name="statusCode">1000</stringProp>
+          <stringProp name="readTimeout">6000</stringProp>
+        </eu.luminis.jmeter.wssampler.CloseWebSocketSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
