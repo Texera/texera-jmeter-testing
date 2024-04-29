@@ -38,6 +38,8 @@ Used for HTTP stress testing of Texera deployments based on jmeter. For now only
 1. [http://localhost:8080/api/auth/register](http://localhost:4200/api/auth/register)
     1. Registers the user with given username and password
     2. Response assertion has a regex matching to make sure accessToken is generated and returned in response.
+    3. **`random_pairs.csv` contains the usernames/passwords for testing. The file can be generated/upsaled by executing `generate.sh`.**
+    4. **It's okay if this test fails because the user is already registered.**
 2. [http://localhost:8080/api/auth/login](http://localhost:8080/api/auth/login)
     1. Login user similar to above
     2. Does response assertion as described above
