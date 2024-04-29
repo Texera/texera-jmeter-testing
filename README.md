@@ -21,6 +21,7 @@ Used for HTTP stress testing of Texera deployments based on jmeter. For now only
 - **CSV Dataset Config**: CSV file that defines all the username and password pairs to be used for testing.
   1. CSV format: user, password
   2. Variable name: Generate jmeter variable name to store username and password
+- ### “View Results Tree” Listener is used to track and view the output/status of all the requests executed.
 
 ### **HTTP requests in simple_test:**
 
@@ -38,48 +39,48 @@ Used for HTTP stress testing of Texera deployments based on jmeter. For now only
     1. Registers the user with given username and password
     2. Response assertion has a regex matching to make sure accessToken is generated and returned in response.
 2. [http://localhost:8080/api/auth/login](http://localhost:8080/api/auth/login)
-    3. Login user similar to above
-    4. Does response assertion as described above
-    5. JSON extractor:
+    1. Login user similar to above
+    2. Does response assertion as described above
+    3. JSON extractor:
         1. Used to extract the accessToken from HTTP response and store it in a jmeter variable for use in further requests
         2. Name of created variable: name of the jmeter variable to store the access token
         3. JSON Path expression: $.accessToken ($ being the json object)
         4. Match No.: 1 (matches and returns the first match we get)
 3. [http://localhost:8080/api/auth/refresh](http://localhost:8080/api/auth/refresh)
-    6. Same as above except the accessToken is sent in the body instead of the user, password
+    1. Same as above except the accessToken is sent in the body instead of the user, password
 4. ~~[http://localhost:8080/api/user/file/upload](http://localhost:8080/api/user/file/upload)~~
-    7. ~~Uploads a file to the account that is being used~~
-    8. ~~In HTTP header manager(expand the http request to get this), content type and authorization are defined. (Authorization contains the access token as value defined as follows: Bearer {accessToken}) (All requests following this make use of this token)~~
-    9. ~~Check “Use multipart/form data”. (Data is sent in form data)~~
-    10. ~~Under “Files upload” tab, enter file path, parameter name(“file” is how it is referenced in form data), MIME type - “text/plain”~~
+    1. ~~Uploads a file to the account that is being used~~
+    2. ~~In HTTP header manager(expand the http request to get this), content type and authorization are defined. (Authorization contains the access token as value defined as follows: Bearer {accessToken}) (All requests following this make use of this token)~~
+    1. ~~Check “Use multipart/form data”. (Data is sent in form data)~~
+    2. ~~Under “Files upload” tab, enter file path, parameter name(“file” is how it is referenced in form data), MIME type - “text/plain”~~
 5. ~~[http://localhost:4200/api/user/file/list](http://localhost:4200/api/user/file/list)~~
-    11. ~~Simple get request that returns list of all files stored in a user’s account~~
-    12. ~~3 JSON extractors are used:~~
-        5. ~~First extracts file id and stores in variable “fid”~~
+    1. ~~Simple get request that returns list of all files stored in a user’s account~~
+    2. ~~3 JSON extractors are used:~~
+        1. ~~First extracts file id and stores in variable “fid”~~
             1. ~~JSON path expressions: $.[-1].file.fid~~
                 1. ~~Response is a list of files so index -1 gives us the last/most recently added file response object. Access file within this object which contain fid(file id)~~
             2. ~~Match no.: 1~~
-        6. ~~Second JSON extractor stores username~~
-            3. ~~JSON path expressions: $.[-1].ownerEmail~~
-                2. ~~Similar to above, get the last file object using index -1, and get ownerEmail for username~~
-        7. ~~Third JSON extractor gets filename:~~
-            4. ~~JSON path expressions: $.[-1].file.name~~
-                3. ~~Same as above~~
+        2. ~~Second JSON extractor stores username~~
+            1. ~~JSON path expressions: $.[-1].ownerEmail~~
+                1. ~~Similar to above, get the last file object using index -1, and get ownerEmail for username~~
+        3. ~~Third JSON extractor gets filename:~~
+            1. ~~JSON path expressions: $.[-1].file.name~~
+                1. ~~Same as above~~
 6. [http://localhost:8080/api/dataset/create](http://localhost:8080/api/dataset/create)
-    13. Creates a test dataset named “Test Dataset” with the provided file “Assignment 5.csv”.
-    14. Extracts the dataset id as ${did} from the response JSON.
+    1. Creates a test dataset named “Test Dataset” with the provided file “Assignment 5.csv”.
+    2. Extracts the dataset id as ${did} from the response JSON.
 7. [http://localhost:8080/api/workflow/create](http://localhost:8080/api/workflow/create)
-    15. Creates the workflow to be run and tested
-    16. Generate the workflow and download it as a json file
-    17. JSON file will be of following format:
-        8. {“operators”: [{list of operator objects}]}
-    18. Copy the above json object(json_obj) and insert into the request body as follows:
-        9. {“name”: “workflow_name”, “content”: {insert copied json_obj}}
-            5. Make sure to use quotes around the object along with necessary escape characters (refer jmx file for clarity)
+    1. Creates the workflow to be run and tested
+    2. Generate the workflow and download it as a json file
+    3. JSON file will be of following format:
+        1. {“operators”: [{list of operator objects}]}
+    4. Copy the above json object(json_obj) and insert into the request body as follows:
+        1. {“name”: “workflow_name”, “content”: {insert copied json_obj}}
+            1. Make sure to use quotes around the object along with necessary escape characters (refer jmx file for clarity)
 8. [http://localhost:8080/api/workflow/${wid}/environment](http://localhost:8080/api/workflow/${wid}/environment)
-    19. Retrieves the eid of the created workflow.
+    1. Retrieves the eid of the created workflow.
 9. [http://localhost:8080/api/environment/${eid}/dataset/add](http://localhost:8080/api/environment/${eid}/dataset/add)
-    20. Adds the test dataset to the environment of this workflow.
+    1. Adds the test dataset to the environment of this workflow.
 
 ### Websocket requests in simple_test:
 
@@ -263,5 +264,3 @@ There are 4 websocket requests sent from the client to the server. These will be
         Also, path matching is “$.table” as this list comes in the table parameter of the response object.
 
 5. Close the websocket using websocket close.
-
-### “View Results Tree” Listener is used to track and view the output/status of all the requests executed.
