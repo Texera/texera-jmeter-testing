@@ -5,7 +5,7 @@ Used for HTTP stress testing of Texera deployments based on jmeter. For now only
 
 - **Need to have jmeter installed first. Open `simple_test/jmx` in jmeter before reading the rest of this doc.**
 - **Need to install extension [WebSocket Samplers by Peter Doornbosch](https://jmeter-plugins.org/?search=websocket-samplers) first before opening the jmx file.**
-- **After opening the jmx file in jmeter, you need to replace all file paths used in the jmx plan with the absolute path in your machine.**
+- **Currently the jmx file is using relative path which should work. If you encounter file not found error for some tests, you might need to replace the file paths used in the jmx plan with the absolute path in your machine.**
   1.  `Thread Group -> CSV Data Set Config -> Filename`
   2. `http://localhost:8080/api/dataset/create -> Files Upload -> File Path`
 - **Any disabled http headers/cookie managers can be ignored.**
